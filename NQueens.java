@@ -1,5 +1,3 @@
-package unit09;
-
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -98,7 +96,7 @@ public class NQueens {
 
     public static void main(String[] args) {
         Set<int[]> solutions;
-        int size = 14;
+        int size = 13;
 
         double timer0 = System.currentTimeMillis();
         NQueens NQueens = new NQueens(size);
@@ -141,6 +139,8 @@ public class NQueens {
                         }
                         System.out.println();
                     }
+                } else if(input.equals("help")){
+                    System.out.println("Type \"print\" to print all solutions\nType \"exit\" to exit the program\n");
                 } else if(input.equals("")){
                 } else {
                     System.out.println("Invalid input, try again or type \"exit\" to exit the program\n");
