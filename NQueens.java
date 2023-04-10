@@ -151,3 +151,5 @@ public class NQueens {
         }
     }
 }
+
+//Code by: Derek Porcelli
